@@ -1,0 +1,41 @@
+$st-color: #f00;
+$nd-color: #00f;
+$th-color: #0f0;
+
+@mixin centralizer($justify-content) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: center;
+}
+.bola1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: $st-color;
+
+    &:hover {
+        background-color: $nd-color;;
+    }
+}
+
+.bola2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: $nd-color;
+    
+    &:hover {
+        background-color: $th-color;;
+    }
+}
+
+.bola3 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: $th-color;
+
+    &:hover {
+        background-color: $st-color;;
+    }
+}
